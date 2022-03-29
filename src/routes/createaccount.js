@@ -84,7 +84,7 @@ function CreateAccount() {
                  <>
                      <h5>Account registration successful! Welcome, {ctx.currentUser.name}!</h5>
                      <p>You are currently logged in.</p>
-                     <button type="submit" className="btn btn-light" onClick={clearForm}>Add another account</button>
+                     <center><button type="submit" className="btn btn-light" onClick={clearForm}>Add another account</button></center>
  
                  </>
              )}

@@ -98,7 +98,7 @@ function Login() {
                 <>
                     <h5>Welcome, {ctx.currentUser.name}! You are currently logged in.</h5>
                     <br/>
-                    <button type="submit" className="btn btn-light" onClick={clearForm}>Log Out</button>
+                    <center><button type="submit" className="btn btn-light" onClick={clearForm}>Log Out</button></center>
                 </>}
             
         />
