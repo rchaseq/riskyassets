@@ -27,6 +27,10 @@ function Deposit() {
             setMessage(`You cannot deposit less than $0.01, please verify the amount and try again.`);
             return;
         }
+        if (deposit = NaN) {
+            setMessage(`Please only input numbers.`);
+            return;
+        }
         let i = ctx.userIndex;
         let currentBalance = Number(ctx.users[i].balance);
         ctx.users[i].balance = currentBalance + Number(deposit);

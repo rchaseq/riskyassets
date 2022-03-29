@@ -35,6 +35,10 @@ function Withdraw() {
             setMessage(`You cannot withdraw less than $0.01, please verify the amount and try again.`);
             return;
         }
+        if (withdraw = NaN) {
+            setMessage(`Please only input numbers.`);
+            return;
+        }
         ctx.users[i].balance = currentBalance - Number(withdraw);
         const currentTransaction = datedTransaction((0 - Number(withdraw)));
         ctx.users[i].history.splice(0,0,currentTransaction);
@@ -44,7 +48,7 @@ function Withdraw() {
         setEnable(false);
     };
 
-    // Validate all fields using the validate function inported from validate
+    // Validate all fields using the validate function imported from validate
     const validateThis = () => {
         if (validate(withdraw, 'Please enter withdrawal amount.', setStatus))
             {
