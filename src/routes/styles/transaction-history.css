@@ -1,0 +1,8 @@
+.transaction:nth-of-type(even) {
+    background-color: #a71212;
+    color:white
+}
+.transaction:nth-of-type(odd) {
+    background-color: #a71212;
+    color:white
+}

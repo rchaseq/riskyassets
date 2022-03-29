@@ -1,0 +1,30 @@
+.alldata {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+}
+.data-item:nth-of-type(even) {
+    background-color: #a71212;
+    color:white;
+}
+.data-item:nth-of-type(odd) {
+    background-color: #a71212;
+    color:white
+}
+.offset {
+    margin-left: 5px;
+}
+.bg-main {
+    background-color: #9c1010;
+}
+
+.data-item .transaction:nth-of-type(even) {
+    background-color: unset;
+}
+
+.data-item .transaction:nth-of-type(odd) {
+    background-color: unset;
+}
+
+.padded {
+    padding: 3px;
+}
