@@ -24,13 +24,13 @@ function Withdraw() {
     function handleSubmit() {
         let i = ctx.userIndex;
         let currentBalance = Number(ctx.users[i].balance);
-        // Display an error if the requested amount exceeds the available balance
+        // If the requested amount exceeds the available balance
         if (currentBalance < Number(withdraw)) {
             setMessage(`Amount must not exceed current balance.`);
             setWithdraw(0);
             return;
         }
-        // Display an error if the requested amount is a negative number
+        // If the requested amount is a negative number
         if (withdraw <= 0) {
             setMessage(`You cannot withdraw less than $0.01, please verify the amount and try again.`);
             return;
@@ -69,7 +69,7 @@ function Withdraw() {
             status={status}
             body={show ? (
                 <>
-                    <h5>Welcome {ctx.currentUser.name}</h5>
+                    <h5>Welcome, {ctx.currentUser.name}!</h5>
                     <h6>Your current balance is:</h6>
                     <h6>${ctx.currentUser.balance}</h6>
                     Withdraw<br/>

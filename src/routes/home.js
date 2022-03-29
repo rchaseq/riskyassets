@@ -1,6 +1,6 @@
 import Card from '../components/card';
 import image from '../images/bank.png'
-
+<audio src=".src\audio\CashRegister.mp3" autoplay="autoplay"></audio>
 function Home() {
     return (
        <Card
@@ -19,9 +19,7 @@ function Home() {
                 <br/>
                 <ul>
                     <li className="extra-pushed">A $100 bonus, just for signing up!</li>
-                    <br/>
                     <li className="extra-pushed">No fees - we're not even recognized as a financial institution!</li>
-                    <br/>
                     <li className="extra-pushed">Total exposure of your personal information! Who says passwords should be secret? You have rights!</li>
                 </ul>
             </div>
@@ -32,6 +30,6 @@ function Home() {
        />
     );
 }
-<audio src="./src/audio/CashRegister.mp3" autoplay="autoplay"></audio>
+
 
 export default Home;
